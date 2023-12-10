@@ -13,6 +13,8 @@ class FilesListWidget extends StatelessWidget {
     Files(id: 3, mainNumber: 123, date: "12-2-2022"),
     Files(id: 4, mainNumber: 124, date: "13-2-2022"),
     Files(id: 5, mainNumber: 125, date: "14-2-2022"),
+    Files(id: 5, mainNumber: 125, date: "14-2-2022"),
+    Files(id: 5, mainNumber: 125, date: "14-2-2022"),
   ];
 
   @override
@@ -44,11 +46,13 @@ class FilesListWidget extends StatelessWidget {
         ),
       );
     } else {
-      return ListView.separated(
-        itemCount: file.length,
-        itemBuilder: (context, index) => FileWidget(file[index]),
-        separatorBuilder: (context, index) => const SizedBox(
-          height: 8,
+      return Expanded(
+        child: ListView.separated(
+          itemCount: file.length,
+          itemBuilder: (context, index) => FileWidget(file[index]),
+          separatorBuilder: (context, index) => const SizedBox(
+            height: 8,
+          ),
         ),
       );
     }

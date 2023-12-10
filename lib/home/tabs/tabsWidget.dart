@@ -59,8 +59,7 @@ class _SourcesTabsWidgetState extends State<TabsWidget> {
                   fontFamily: ("Cairo-Bold")),
             ),
           ),
-          SizedBox(
-              height: 400, child: FilesListWidget(widget.car[selectedIndex]))
+          FilesListWidget(widget.car[selectedIndex])
         ],
       ),
     );

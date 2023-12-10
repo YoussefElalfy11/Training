@@ -20,21 +20,23 @@ class HomeScreen extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),
-          child: const Center(
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.add, size: 22, color: Colors.white),
-                SizedBox(width: 2),
-                Text(
-                  "إضافة صيانة جديدة",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      fontFamily: "Cairo-Medium"),
-                ),
-              ],
+          child: const SingleChildScrollView(
+            child: Center(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.add, size: 22, color: Colors.white),
+                  SizedBox(width: 2),
+                  Text(
+                    "إضافة صيانة جديدة",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: "Cairo-Medium"),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -75,7 +77,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          TabsWidget()
+          Expanded(child: TabsWidget())
         ],
       ),
     );
