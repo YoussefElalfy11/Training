@@ -14,7 +14,7 @@ class _TabItemState extends State<TabItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 85,
+      width: 83,
       height: 40,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),

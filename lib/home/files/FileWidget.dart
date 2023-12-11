@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../models/FilesModel.dart';
 
@@ -19,21 +20,21 @@ class FileWidget extends StatelessWidget {
         child: ListTile(
           leading: Image.asset(
             "assets/images/image 1.png",
-            width: 33,
-            height: 30,
+            width: 30.w,
+            height: 27.h,
           ),
           title: Text("رقم الصيانة : ${file.mainNumber}",
-              style: const TextStyle(
+              style: TextStyle(
                   color: Colors.black,
                   fontFamily: ("Cairo-Medium"),
                   fontWeight: FontWeight.w600,
-                  fontSize: 12)),
+                  fontSize: 12.sp)),
           trailing: Text(file.date,
-              style: const TextStyle(
+              style: TextStyle(
                   color: Colors.black,
                   fontFamily: ("Cairo-Medium"),
                   fontWeight: FontWeight.w600,
-                  fontSize: 12)),
+                  fontSize: 12.sp)),
         ),
       ),
     );

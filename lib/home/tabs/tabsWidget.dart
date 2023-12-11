@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trining/home/files/FilesListWidget.dart';
 
 import '../../models/CarsModel.dart';
@@ -28,11 +29,11 @@ class _SourcesTabsWidgetState extends State<TabsWidget> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(
-            height: 12,
+          SizedBox(
+            height: 12.h,
           ),
           TabBar(
-            labelPadding: const EdgeInsets.symmetric(horizontal: 8),
+            labelPadding: EdgeInsets.symmetric(horizontal: 4),
             indicator: const BoxDecoration(),
             indicatorColor: Colors.transparent,
             indicatorWeight: 0.0,
@@ -48,14 +49,14 @@ class _SourcesTabsWidgetState extends State<TabsWidget> {
                 )
                 .toList(),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.only(right: 12.0, top: 24, bottom: 12),
             child: Text(
               "الملفات المتاحة",
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w700,
-                  fontSize: 15,
+                  fontSize: 14.sp,
                   fontFamily: ("Cairo-Bold")),
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trining/models/CarsModel.dart';
 
 import '../../models/FilesModel.dart';
@@ -27,18 +28,18 @@ class FilesListWidget extends StatelessWidget {
             children: [
               Image.asset(
                 "assets/images/image 21.png",
-                width: 90,
-                height: 90,
+                width: 90.w,
+                height: 90.h,
               ),
-              const SizedBox(
-                height: 16,
+              SizedBox(
+                height: 8.h,
               ),
-              const Text(
+              Text(
                 "لا توجد ملفات",
                 style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w700,
-                    fontSize: 15,
+                    fontSize: 14.h,
                     fontFamily: ("Cairo-Bold")),
               )
             ],
@@ -50,8 +51,8 @@ class FilesListWidget extends StatelessWidget {
         child: ListView.separated(
           itemCount: file.length,
           itemBuilder: (context, index) => FileWidget(file[index]),
-          separatorBuilder: (context, index) => const SizedBox(
-            height: 8,
+          separatorBuilder: (context, index) => SizedBox(
+            height: 8.h,
           ),
         ),
       );
