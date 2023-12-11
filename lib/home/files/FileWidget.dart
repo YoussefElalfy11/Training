@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../models/FilesModel.dart';
 
 class FileWidget extends StatelessWidget {
-  FileWidget(this.file, {Key? key}) : super(key: key);
-  Files file;
+  const FileWidget(this.file, {Key? key}) : super(key: key);
+  final Files file;
 
   @override
   Widget build(BuildContext context) {

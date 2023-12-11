@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:trining/models/CarsModel.dart';
 
 class TabItem extends StatefulWidget {
-  TabItem(this.car, this.isSelected, {Key? key}) : super(key: key);
-  Cars car;
-  bool isSelected;
+  const TabItem(this.car, this.isSelected, {Key? key}) : super(key: key);
+  final Cars car;
+  final bool isSelected;
 
   @override
   State<TabItem> createState() => _TabItemState();

@@ -7,7 +7,7 @@ import 'TabItem.dart';
 
 class TabsWidget extends StatefulWidget {
   TabsWidget({Key? key}) : super(key: key);
-  List<Cars> car = [
+  final List<Cars> car = [
     Cars(0, "الكل"),
     Cars(1, "سيارة 1"),
     Cars(2, "سيارة 2"),

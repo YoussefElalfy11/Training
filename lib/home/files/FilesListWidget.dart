@@ -7,8 +7,8 @@ import 'FileWidget.dart';
 
 class FilesListWidget extends StatelessWidget {
   FilesListWidget(this.car, {Key? key}) : super(key: key);
-  Cars car;
-  List<Files> file = [
+  final Cars car;
+  final List<Files> file = [
     Files(id: 1, mainNumber: 121, date: "10-2-2022"),
     Files(id: 2, mainNumber: 122, date: "11-2-2022"),
     Files(id: 3, mainNumber: 123, date: "12-2-2022"),
